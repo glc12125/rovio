@@ -1,0 +1,13 @@
+###### Camera Calibration File For blackfly camera ######
+image_width: 1440
+image_height: 1080
+camera_name: camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [1126.282997496065, 0.000000, 744.5863853780909, 0.000000, 1125.7763902795432, 585.635514022965, 0.000000, 0.000000, 1.000000]
+distortion_model: equidistant
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:  [-0.0960107794226568, 0.3025534565956381, -1.0760163332134263, 1.286038999697972, 0.000000]

@@ -14,6 +14,11 @@ add_definitions(-DROVIO_NPOSE=${ROVIO_NPOSE})
 
 add_subdirectory(lightweight_filtering)
 
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+message("Build type: " ${CMAKE_BUILD_TYPE})
+
 ##################### Find, include, and compile library #####################
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 if(0)
